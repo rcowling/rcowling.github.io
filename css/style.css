@@ -71,6 +71,7 @@
 }
 
 .resume h3 {
+  color: white;    
   font-weight: bold;
 }
 
@@ -81,6 +82,7 @@ hr {
 
 p {
   font-size: 20px;
+  color: white; 
 }
 
 a {
@@ -203,3 +205,12 @@ fieldset[disabled] .btn-xl.active {
   background-color: white;
 }
 
+h2 {
+    color: white;
+    font-style: bold;
+    font-size: 48px:
+}
+
+h4 {
+    color: white;
+}
