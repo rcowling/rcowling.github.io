@@ -220,3 +220,9 @@ h4 {
 .img-responsive center-block {
     padding-top: 40px;
 }
+
+portfolio-heading {
+    font-size: 20px;
+  color: black; 
+    align-content: center;
+}
