@@ -47,13 +47,13 @@
 /*** Portfolio pieces ***/
 .portfolio-thumbnail {
   background-color: #fff;
-  border-color: #863ee3;
+  border-color: white;
   border-width: 2px;
   width: 95%;
 }
 
 .portfolio-thumbnail:hover {
-  border-color: #ebd122;
+  border-color: #21edcf;
 }
 
 .portfolio-title {
@@ -87,7 +87,7 @@ p {
 }
 
 a {
-  color: #863ee3;
+  color: #6fc4fa;
 }
 
 a:hover {
@@ -128,8 +128,8 @@ body {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: white;
-  background-color: #fec503;
-  border-color: #f6bf01;
+  background-color: None;
+  border-color: None;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -151,8 +151,8 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: None;
+  border-color: None;
 }
 .btn-primary .badge {
   color: #fed136;
@@ -160,8 +160,8 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-xl {
   color: white;
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: None;
+  border-color: white;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -175,8 +175,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
   color: white;
-  background-color: #fec503;
-  border-color: #f6bf01;
+  background-color: #21edcf;
+  border-color: white;
 }
 .btn-xl:active,
 .btn-xl.active,
@@ -198,8 +198,14 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 }
 .btn-xl .badge {
   color: #fed136;
