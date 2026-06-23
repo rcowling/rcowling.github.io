@@ -1,95 +1,213 @@
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<meta name="keywords" content="maps, cartography, gis, webmapping"/>
-		<title>Bob Cowling Cartography</title>
-		
-		<!--put your Bootstrap stylesheet links below this comment and above style.css-->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-		<link rel="stylesheet" href="css/style.css">
-         <!-- Custom Fonts -->        
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-	</head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="maps, cartography, gis, webmapping, historical gis, deep mapping">
+	<meta name="description" content="Bob Cowling — Cartography & Historical GIS. Interactive maps, digital atlases, and spatial storytelling projects across the Great Lakes region and beyond.">
+	<title>Bob Cowling — Cartography &amp; GIS</title>
 
-	<body>
-		<nav class="navbar navbar-default navbar-fixed-top"> <!-- Creates the navbar -->
-		  <div class="container">
-		    <div class="navbar-header"> <!-- Creates the navbar header -->
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span> <!-- Used for screen readers for accessibility -->
-						<span class="glyphicon glyphicon-menu-hamburger"></span>
-						<span class="menu"> Menu</span>
-					</button> <!-- Hamburger button for smaller devices -->
-					<a class="navbar-brand"
-                       href="index.html"
-                       style="font-family:Kaushan Script;font-size: 26px; color: #21edcf">
-                        <:/Bob_Cowling_
-                       </a> <!-- Your website brand name -->
-		    </div>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-		    <div id="navbar" class="collapse navbar-collapse"> <!-- Links to include in navbar -->
-		      <ul class="nav navbar-nav navbar-right">  <!-- Unordered list for links on navbar -->
-		        <li><a href="resume.html">Resume</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="about.html">About</a></li>  
-		        <li><a href="contact.html">Contact</a></li>
-		      </ul>
-		    </div> <!-- end .navbar-collapse -->
-		  </div> <!-- end .container -->
-		</nav> <!-- end navigation bar -->
-<div class="container">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- contour texture layer -->
+	<div class="contour-field" aria-hidden="true"></div>
+
+	<header class="site-header">
+		<div class="wrap header-row">
+			<a class="brand" href="index.html">				
+				<span class="brand-text">Bob Cowling</span>
+        <span class="brand-mark">MLIS</span>
+			</a>
+
+			<button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation">
+				<span></span><span></span><span></span>
+			</button>
+
+			<nav id="primaryNav" class="primary-nav">				
+				<a href="index.html">Portfolio</a>
+				<a href="resume.html"  class="is-active">Resume</a>				
+				<a href="contact.html">Contact</a>
+			</nav>
+		</div>
+	</header>
+<div class="container" style="margin-left: 10%">
       <div class="row">
         <div class="col-md-10 col-md-offset-1 resume">
-          <h5>Technical Skills</h5>
-            <h3>Cartography and GIS</h3>
-          <p>
-           Mapbox GL JS, ArcGIS Online JavaScript API, Leaflet, D3, CARTO, Google Maps Javascript API, Adobe Photoshop, Adobe Illustrator, ArcGIS, ArcPad, Trimble Terrasync, QGIS, Mapbox, CartoCSS
-          </p>
-            <h3>Programming Skills</h3>
-           <p>Javascript, Python, HTML/CSS, Bootstrap, Regex, Command Line</p>    
-          <hr>
-          <h5>Experience</h5>
-         <h3>Blog Chef</h3>    
-          <h4>Web Entrepreneur, January 2008 - Present. Marquette, MI.</h4>
-          <ul>
-            <p>Self-startup business entrepreneur; responsible for website design, maintenance, and obtaining commission-based pay; preparation of food in a visually appealing manner, photographing, and posting to online website with written instructions.</p>
-          </ul>
-          <h3>Superior Watershed Partnership</h3>
-          <h4>Intern, January 2014-May 2014. Marquette, MI.</h4>
-          <ul>
-            <p>Responsible for contacting Upper Peninsula zoning administrators and compiling riparian zoning requirements into a database in order to support project leaders with information for standardized zoning requirements; results of research were then converted into GIS map format for visual presentation.</p>
-          </ul>
-            <h5>Freelance</h5>
-         <h3>Noquemenon Trail Network</h3>    
-          <h4>Map Designer, October 2015 - January 2016. Marquette, MI.</h4>
-          <ul>
-            <p>Sole creator of ski trail network reference maps for a non-profit organization using ArcMap.</p>
-          </ul>
-          <h3>City of Ishpeming</h3>
-          <h4>Map Designer, January 2016-May 2016. Ishpeming, MI.</h4>
-          <ul>
-            <p>Responsible for using data collected and designing a reference map for starting points on local ski trails.</p>
-          </ul>
-          <hr>
-          <h5>Education</h5>
-          <h3>University of Wisconsin-Madison</h3>
-          <ul>
-            <h4>M.S. in GIS and Web Map Programming</h4>
-            <h4>Graduated May 2018</h4>  
-          </ul>
-           <h3>Northern Michigan University</h3>    
-            <ul>
-            <h4>B.S. in Geomatics</h4>
-            <h4>Graduated December 2014</h4>  
-          </ul>
+
+          <div class="resume-masthead">
+            <h1 class="resume-name">Robert Cowling</h1>
+            <p class="resume-title">GIS Librarian</p>
+            <p class="resume-contact">
+              Houghton, MI 49931 &nbsp;&middot;&nbsp; (906) 236-5995 &nbsp;&middot;&nbsp;
+              <a href="mailto:rocowling@gmail.com">rocowling@gmail.com</a>
+            </p>
           </div>
+
+          <p class="resume-summary">
+            GIS Librarian with extensive experience in managing GIS resources, supporting grant-funded projects, developing web applications, and mentoring students. Proven track record of supporting successful, award-winning research projects. Adept in HTML, CSS, JavaScript, and Python with a strong commitment to advancing GIS in academic libraries, archives, and the spatial humanities.
+          </p>
+
+          <hr>
+
+          <h5>Professional Experience <span class="resume-h5-note">(selected)</span></h5>
+
+          <h3>GIS Data Librarian</h3>
+          <h4>Geospatial Research Facility / Van Pelt and Opie Library, Michigan Technological University — Houghton, Michigan <span class="resume-date">Feb 2022&ndash;Present</span></h4>
+          <p class="resume-role-note">Time split 60% Geospatial Research Facility / 40% Van Pelt and Opie Library</p>
+          <ul>
+            <li>Managed and curated the institution's GIS data and resources, providing access and support to faculty, students, and researchers.</li>
+            <li>Authored and maintained detailed geospatial metadata for GIS datasets in compliance with national and international standards, ensuring data integrity and discoverability.</li>
+            <li>Developed and maintained web applications to facilitate GIS data access, discovery, and visualization.</li>
+            <li>Offered GIS support for faculty and student research projects in Social and Environmental Sciences, Geological Sciences, and Humanities including reference consultations, data management, workshops, and application development.</li>
+            <li>Mentored and guided students through GIS-related research projects, fostering their development and contributing to their academic success.</li>
+            <li>Archived GIS research project data on the University's digital repository for long-term preservation.</li>
+            <li>Created Python scripts and used AI to automate data processing and analysis tasks.</li>
+          </ul>
+
+          <h3>Map and GIS Intern <span class="resume-role-note">(Library Fieldwork Experience)</span></h3>
+          <h4>Map and Geospatial Hub, Hayden Library, Arizona State University — Tempe, Arizona <span class="resume-date">Feb 2021&ndash;Dec 2021</span></h4>
+          <ul>
+            <li>Developed interactive web map index applications which serve as discovery tools for historical map collections.</li>
+            <li>Led the development of a 3D interactive map library project designed for collections management and discovery of historical maps, atlases, and library assets.</li>
+          </ul>
+
+          <h3>GIS Intern <span class="resume-role-note">(Library Fieldwork Experience)</span></h3>
+          <h4>American Geographical Society Library (AGSL), University of Wisconsin&ndash;Milwaukee — Milwaukee, Wisconsin <span class="resume-date">Sep 2020&ndash;Dec 2020</span></h4>
+          <ul>
+            <li>Wrote FGDC and ISO metadata for the library's geospatial datasets.</li>
+            <li>Developed custom web mapping applications for the discovery of historical nautical charts and Sanborn Fire insurance plans.</li>
+            <li>Created GIS tutorials on downloading and mapping historical demographic Census data.</li>
+          </ul>
+
+          <hr>
+
+          <h5>Education</h5>
+
+          <h3>Master of Library and Information Science (MLIS)</h3>
+          <h4>University of Wisconsin&ndash;Milwaukee — Milwaukee, Wisconsin <span class="resume-date">Graduated December 2021</span></h4>
+
+          <h3>Master of Science in GIS &amp; Cartography</h3>
+          <h4>University of Wisconsin&ndash;Madison — Madison, Wisconsin <span class="resume-date">Graduated May 2018</span></h4>
+
+          <h3>Bachelor of Science in Geomatics</h3>
+          <h4>Northern Michigan University — Marquette, Michigan <span class="resume-date">Graduated December 2014</span></h4>
+
+          <hr>
+
+          <h5>Skills</h5>
+          <div class="resume-skills-grid">
+            <ul>
+              <li>Geographic Information Systems (GIS)</li>
+              <li>GIS Data Management</li>
+              <li>Geospatial Metadata</li>
+              <li>GIS Application Development</li>
+              <li>Drupal</li>
+              <li>PostgreSQL / PostGIS</li>
+            </ul>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>Cartography</li>
+              <li>GeoAI</li>
+              <li>GeoServer</li>
+            </ul>
+            <ul>
+              <li>ArcGIS Pro</li>
+              <li>ArcGIS Online</li>
+              <li>ArcGIS Server</li>
+              <li>ArcGIS StoryMaps</li>
+              <li>Adobe Illustrator</li>
+              <li>Adobe Photoshop</li>
+              <li>QGIS</li>
+            </ul>
+          </div>
+
+          <hr>
+
+          <h5>Publications</h5>
+          <ul class="resume-pub-list">
+            <li>Trepal, Dan, <strong>Robert Cowling</strong>, Krysta Ryzewski, and Don Lafreniere. 2024. &ldquo;Digital Deep Maps for Community Archaeology and Heritage: A Case Study in Hamtramck, MI&rdquo; <em>Advances in Archaeological Practice</em>. <span class="resume-pub-status">(Manuscript in preparation)</span></li>
+            <li><strong>Cowling, R.</strong>, Lizzadro-McPherson, D.J., Verissimo, L., and Vye, E.C. (2023). Keweenaw Geoheritage Geoatlas. <a href="http://www.geoatlas.mtu.edu" target="_blank" rel="noopener noreferrer">geoatlas.mtu.edu</a></li>
+            <li><strong>Cowling, R.</strong> (2023). &ldquo;Time Traveler's Companion: Discovering the Keweenaw's Heritage through a Mobile App.&rdquo; <em>WAML Information Bulletin</em> 54(3). <a href="https://waml.org/waml-information-bulletin/volume-54-number-3/time-travelers-companion/" target="_blank" rel="noopener noreferrer">Read article</a></li>
+            <li><strong>Cowling, R.</strong> (2021). &ldquo;AGSL Nautical Chart Explorer.&rdquo; <em>WAML Information Bulletin</em> 52(3). <a href="https://waml.org/waml-information-bulletin/volume-52-number-3/agsl-nautical-chart-explorer/" target="_blank" rel="noopener noreferrer">Read article</a></li>
+          </ul>
+
+          <hr>
+
+          <h5>Presentations and Workshops</h5>
+          <ul class="resume-pub-list">
+            <li><strong>Robert Cowling.</strong> &ldquo;Building a Deep Mapping Mobile Application: Mobile technologies for deep mapping and beyond.&rdquo; NEH Community Deep Mapping Institute (2025).</li>
+            <li>James Juip, <strong>Robert Cowling</strong>, Sarah Fayen Scarlett, Don Lafreniere. &ldquo;A New Methodological Approach to Integrating Historical Photography into Historical Spatial Data Infrastructures.&rdquo; Social Science History Association Annual Meeting (2025).</li>
+            <li>Sarah Fayen Scarlett, James Juip, <strong>Robert L. Cowling</strong>, Don Lafreniere. &ldquo;Mobile Digital Storytelling Impacts on Post-Industrial Landscape Perceptions.&rdquo; Social Science History Association Annual Meeting (2025).</li>
+            <li>Matthew Toro, <strong>Robert Cowling</strong>, Eric Friesenhahn, Jill Sherwood. &ldquo;Indoor Space Modeling with 3D Web GIS for Library Asset Management, Discovery, Visualization, and More.&rdquo; Western Association of Map Libraries Conference (2021).</li>
+            <li>Matthew Toro, <strong>Robert Cowling</strong>, Eric Friesenhahn, Jill Sherwood. &ldquo;Indoor Space Modeling with 3D Web GIS for Library Asset Management, Discovery, Visualization, and More.&rdquo; AGIC Arizona Geographic Information Council Education and Training Symposium (2021).</li>
+          </ul>
+
+          <hr>
+
+          <h5>Research Projects Supported <span class="resume-h5-note">(selected)</span></h5>
+
+          <h3>Deep Maps and Community Histories</h3>
+          <p class="resume-role-note">Advancing Transdisciplinary and Public-Facing Scholarship in the Spatial Humanities</p>
+          <p>A two-week residential institute followed by a series of virtual sessions on geospatial technologies and digital deep mapping for publicly engaged scholarship. <em>Supported web application development &amp; workshops.</em></p>
+
+          <h3>Menominee Iron Range: Mining &amp; Miners</h3>
+          <p>Interactive story map telling the story of miners on the Menominee Iron Range. The project involved georeferenced historical maps, migration data, and historical photographs. <em>Mentored graduate student and provided extensive GIS training.</em></p>
+
+          <h3>Keweenaw Geoheritage Geoatlas</h3>
+          <p>An accessible geoheritage database exploring the geographic, cultural, and industrial heritage of the western Upper Peninsula, covering Keweenaw, Houghton, and Baraga Counties. <em>Supported data management &amp; web application development.</em></p>
+
+          <h3>Hamtramck Spatial Archaeology Project</h3>
+          <p>Works through the issues of representing and rectifying uncertainties in historical datasets by adapting existing digital data infrastructure methods to accommodate archaeological information. <em>Supported web application development &amp; data management.</em></p>
+
+          <h3>Keweenaw Time Traveler</h3>
+          <p>An online interactive historical atlas changing how we learn about, share, and research the history and heritage of Michigan's Copper Country. <em>Supported mobile application development &amp; data management.</em></p>
+
+          <hr>
+
+          <h5>Grants and Funding</h5>
+          <ul class="resume-grant-list">
+            <li><strong>Geospatial Cultural Resource Management Support</strong> &mdash; The Mannick &amp; Smith Group, Inc. <span class="resume-grant-meta">Co-PI &middot; $58,132 &middot; 2026&ndash;2027</span></li>
+            <li><strong>AI-Driven Deep Mapping of Community and Human-Environment Interactions across Time and Space</strong> &mdash; Wayne State University <span class="resume-grant-meta">Co-PI &middot; $26,073 &middot; 2026</span></li>
+            <li><strong>Owosso Time Traveler</strong> &mdash; City of Owosso <span class="resume-grant-meta">Co-PI &middot; $6,859 &middot; 2025&ndash;2026</span></li>
+            <li><strong>Geospatial Sound Model Update for the National Park Service</strong> &mdash; U.S. Dept. of the Interior / National Park Service (NPS) <span class="resume-grant-meta">Co-PI &middot; $172,636 &middot; 2024&ndash;2026</span></li>
+          </ul>
+
+          <hr>
+
+          <h5>Honors and Awards</h5>
+
+          <h3>2025 Michigan State History Award</h3>
+          <p class="resume-role-note">Issued by the Historical Society of Michigan &middot; September 2025</p>
+          <p>Received in the Websites category for the Copper Country Historical Images (CCHI) Database with its new spatial image and map catalogs.</p>
+
+          <h3>2024 Governor's Award for Historic Preservation</h3>
+          <p class="resume-role-note">Issued by the Michigan State Historic Preservation Office (SHPO) &middot; May 2024</p>
+          <p>Recognized for the Keweenaw Time Traveler, an online historical atlas allowing users to discover the Keweenaw's past through historical maps, census records, photographs, and stories.</p>
+
+          <h3>2023 EST Best Emerging Technology Application Award</h3>
+          <p class="resume-role-note">Issued by the American Library Association (ALA) &middot; March 2023</p>
+          <p>Earned for the ASU Map and Geospatial Hub 3D Explorer, an interactive 3D virtual map library built using GIS technologies.</p>
+
+          <h3>ASU President's Award for Innovation</h3>
+          <p class="resume-role-note">Issued by Arizona State University &middot; January 2023</p>
+          <p>Received for the Map and Geospatial Hub 3D Explorer, an interactive 3D virtual map library built using GIS technologies.</p>
+
+          <h3>Special Achievement in GIS Award</h3>
+          <p class="resume-role-note">Issued by Esri &middot; June 2022</p>
+          <p>Awarded for the Map and Geospatial Hub 3D Explorer, an interactive 3D virtual map library built using GIS technologies.</p>
+
+        </div>
+      </div>
+</div>
          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="lib/jquery-3.1.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

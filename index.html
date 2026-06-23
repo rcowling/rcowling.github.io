@@ -1,63 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<meta name="keywords" content="maps, cartography, gis, webmapping"/>
-		<title>Bob Cowling Cartography</title>
-		
-		<!--put your Bootstrap stylesheet links below this comment and above style.css-->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-		<link rel="stylesheet" href="css/style.css">
-         <!-- Custom Fonts -->        
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-	</head>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="maps, cartography, gis, webmapping, historical gis, deep mapping">
+	<meta name="description" content="Bob Cowling — Cartography & Historical GIS. Interactive maps, digital atlases, and spatial storytelling projects across the Great Lakes region and beyond.">
+	<title>Bob Cowling — Cartography &amp; GIS</title>
 
-	<body>
-		<nav class="navbar navbar-default navbar-fixed-top"> <!-- Creates the navbar -->
-		  <div class="container">
-		    <div class="navbar-header"> <!-- Creates the navbar header -->
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span> <!-- Used for screen readers for accessibility -->
-						<span class="glyphicon glyphicon-menu-hamburger"></span>
-						<span class="menu"> Menu</span>
-					</button> <!-- Hamburger button for smaller devices -->
-					<a class="navbar-brand"
-                       href="#"
-                       style="font-family:Kaushan Script;font-size: 26px; color: #21edcf">
-                        <:/Bob_Cowling_
-                       </a> <!-- Your website brand name -->
-		    </div>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-		    <div id="navbar" class="collapse navbar-collapse"> <!-- Links to include in navbar -->
-		      <ul class="nav navbar-nav navbar-right">  <!-- Unordered list for links on navbar -->
-		        <li><a href="resume.html">Resume</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="about.html">About</a></li>  
-		        <li><a href="contact.html">Contact</a></li>
-		      </ul>
-		    </div> <!-- end .navbar-collapse -->
-		  </div> <!-- end .container -->
-		</nav> <!-- end navigation bar -->
-            
-    <div class="jumbotron">
-			<div class="container">
-                <img src="assets/up4.svg" alt="Upper Peninsula Code" align="left">                
-				<h2>Bob Cowling</h2>
-				<p>Cartographer. GIS User. Web Entrepreneur. Living in the Upper Peninsula of Michigan.</p>
-                 <a href="portfolio.html" class="page-scroll btn btn-xl">View my work</a>
-                
-			</div>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- contour texture layer -->
+	<div class="contour-field" aria-hidden="true"></div>
+
+	<header class="site-header">
+		<div class="wrap header-row">
+			<a class="brand" href="index.html">				
+				<span class="brand-text">Bob Cowling</span>
+				<span class="brand-mark">MLIS</span>
+			</a>
+
+			<button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation">
+				<span></span><span></span><span></span>
+			</button>
+
+			<nav id="primaryNav" class="primary-nav">				
+				<a href="index.html" class="is-active">Portfolio</a>
+				<a href="resume.html">Resume</a>				
+				<a href="contact.html">Contact</a>
+			</nav>
 		</div>
-    
- 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="lib/jquery-3.1.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="lib/bootstrap.min.js"></script>
-  </body>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="wrap hero-grid">
+				<div class="hero-copy">
+					<p class="eyebrow">Cartography &amp; Historical GIS</p>
+					<h1>GIS Librarian and Developer</h1>
+					<p class="hero-lede">
+						I create interactive maps, digital atlases, and geospatial tools that bring archival materials into conversation with the landscapes they document. My work focuses on the intersection of GIS, libraries, and digital scholarship, developing new approaches for making historical and contemporary geospatial data accessible, discoverable, and engaging.
+					</p>
+				</div>
+				<div class="hero-legend">
+					<div class="portrait-frame">
+						<svg viewBox="0 0 220 220" class="portrait-ring" aria-hidden="true">
+							<circle cx="110" cy="110" r="106" class="cr-ring"/>
+							<line x1="110" y1="4" x2="110" y2="20" class="cr-tick"/>
+							<line x1="110" y1="200" x2="110" y2="216" class="cr-tick"/>
+							<line x1="4" y1="110" x2="20" y2="110" class="cr-tick"/>
+							<line x1="200" y1="110" x2="216" y2="110" class="cr-tick"/>
+							<text x="110" y="16" class="cr-label">N</text>
+						</svg>
+						<img src="assets/pic.jpg" alt="Bob Cowling" class="portrait-img">
+						<span class="portrait-needle" aria-hidden="true"></span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="portfolio" id="work">
+			<div class="wrap">
+				<div class="section-head">
+					<h2>Selected Work</h2>
+					<p class="section-sub">Interactive web mapping applications and static maps.</p>
+				</div>
+
+				<div class="card-grid">
+
+					<!-- 1 -->
+					<a class="card" href="portfolio/kiosk.html">
+						<div class="card-media">
+							<img src="assets/huskies-thumb-01.png" alt="VPOL Digital Scholarship Kiosk">
+							<span class="card-tag" data-tag="kiosk">Interactive Kiosk</span>
+						</div>
+						<div class="card-body">
+							<h3>VPOL Digital Scholarship Kiosk</h3>
+							<p>A touchscreen exhibit for Michigan Tech's Van Pelt Library, surfacing student and faculty research through an interactive, map-driven interface.</p>
+						</div>
+					</a>
+
+					<!-- 2 -->
+					<a class="card" href="portfolio/owosso.html">
+						<div class="card-media">
+							<img src="assets/owosso-thumb-01.png" alt="Owosso Time Traveler">
+							<span class="card-tag" data-tag="story">Story Map</span>
+						</div>
+						<div class="card-body">
+							<h3>Owosso Time Traveler</h3>
+							<p>A then-and-now story map pairing historic photographs of Owosso, Michigan with present-day street views, layered over archival plats.</p>
+						</div>
+					</a>
+
+					<!-- 3 -->
+					<a class="card" href="portfolio/geoatlas.html">
+						<div class="card-media">
+							<img src="assets/geoatlas-thumb-01.png" alt="Keweenaw Geoheritage Geoatlas">
+							<span class="card-tag" data-tag="atlas">Digital Atlas</span>
+						</div>
+						<div class="card-body">
+							<h3>Keweenaw Geoheritage GeoAtlas</h3>
+							<p>An interactive geologic atlas documenting the Keweenaw Peninsula's bedrock, mining heritage, and geoheritage sites for public and educational use.</p>
+						</div>
+					</a>
+
+					<!-- 4 -->
+					<a class="card" href="portfolio/buildings.html">
+						<div class="card-media">
+							<img src="assets/building-thumb-01.png" alt="Calumet Historic Building Explorer App">
+							<span class="card-tag" data-tag="explorer">Building Explorer</span>
+						</div>
+						<div class="card-body">
+							<h3>Calumet Historic Building Explorer</h3>
+							<p>A building-by-building survey of Calumet's National Historic Landmark District, linking footprints to ownership history and archival photos.</p>
+						</div>
+					</a>
+
+					<!-- 5 -->
+					<a class="card" href="portfolio/viewsheds.html">
+						<div class="card-media">
+							<img src="assets/imagecatalog-thumb-01.png" alt="CCHI Spatial Image Catalog">
+							<span class="card-tag" data-tag="catalog">Image Catalog</span>
+						</div>
+						<div class="card-body">
+							<h3>CCHI Spatial Image Catalog</h3>
+							<p>A georeferenced catalog of historic photographs with mapped camera viewsheds, letting users see exactly where — and which direction — each image was taken.</p>
+						</div>
+					</a>
+
+					<!-- 6 -->
+					<a class="card" href="portfolio/mapcatalog.html">
+						<div class="card-media">
+							<img src="assets/mapcatalog-thumb-01.png" alt="GRF Map Catalog">
+							<span class="card-tag" data-tag="catalog">Archival Catalog</span>
+						</div>
+						<div class="card-body">
+							<h3>GRF Archival Map Catalog</h3>
+							<p>A searchable, browsable catalog of historic maps from the GRF collection, with footprint overlays showing each map's real-world extent.</p>
+						</div>
+					</a>
+
+					<!-- 7 -->
+					<a class="card" href="portfolio/hamtramck.html">
+						<div class="card-media">
+							<img src="assets/hamtramckexplorer-thumb-01.png" alt="Hamtramck Explorer App">
+							<span class="card-tag" data-tag="explorer">Spatial Archaeology</span>
+						</div>
+						<div class="card-body">
+							<h3>Hamtramck Explorer</h3>
+							<p>A neighborhood-scale explorer documenting the history and built environment of Hamtramck, Michigan through interactive map layers.</p>
+						</div>
+					</a>
+
+					<!-- 8 -->
+					<a class="card" href="portfolio/kettmobile.html">
+						<div class="card-media">
+							<img src="assets/kettmobile-thumb-01.png" alt="Keweenaw Time Traveler">
+							<span class="card-tag" data-tag="mobile">Mobile Storytelling</span>
+						</div>
+						<div class="card-body">
+							<h3>Keweenaw Time Traveler: Mobile Storytelling</h3>
+							<p>A location-aware mobile experience that delivers historic photos and stories as visitors move through the Keweenaw landscape.</p>
+						</div>
+					</a>
+
+					<!-- 9 -->
+					<a class="card" href="portfolio/3dexplorer.html">
+						<div class="card-media">
+							<img src="assets/3dexplorerthumb-01.png" alt="ASU Map and Geospatial Hub 3D Explorer App">
+							<span class="card-tag" data-tag="3d">3D Explorer</span>
+						</div>
+						<div class="card-body">
+							<h3>Map &amp; Geospatial Hub 3D Explorer</h3>
+							<p>A 3D campus exploration tool built for Arizona State University's Map and Geospatial Hub, blending terrain visualization with wayfinding.</p>
+						</div>
+					</a>
+
+					<!-- 10 -->
+					<a class="card" href="portfolio/nautical.html">
+						<div class="card-media">
+							<img src="assets/agslthumb.png" alt="AGSL Nautical Chart Explorer">
+							<span class="card-tag" data-tag="chart">Chart Viewer</span>
+						</div>
+						<div class="card-body">
+							<h3>AGSL Nautical Charts Explorer</h3>
+							<p>A digitized viewer for the American Geographical Society Library's historic nautical chart collection, georeferenced for direct comparison to modern coastlines.</p>
+						</div>
+					</a>
+
+					<!-- 11 -->
+					<a class="card" href="portfolio/sanborn.html">
+						<div class="card-media">
+							<img src="assets/sanbornthumb.png" alt="Sanborn Maps 1938 L'Anse, Michigan">
+							<span class="card-tag" data-tag="sanborn">Sanborn Survey</span>
+						</div>
+						<div class="card-body">
+							<h3>L'Anse 1938 Sanborn Maps</h3>
+							<p>Georeferenced Sanborn fire insurance maps of L'Anse, Michigan from 1938, tiled for deep zoom and aligned to the current street grid.</p>
+						</div>
+					</a>
+
+					<!-- 12 -->
+					<a class="card" href="portfolio/zoning.html">
+						<div class="card-media">
+							<img src="assets/zoningthumb.png" alt="Newburgh, NY Zoning Map">
+							<span class="card-tag" data-tag="planning">Zoning Map</span>
+						</div>
+						<div class="card-body">
+							<h3>Newburgh, NY Zoning Map</h3>
+							<p>An interactive municipal zoning map for the City of Newburgh, built to make district boundaries and land-use rules easy to look up.</p>
+						</div>
+					</a>
+
+					<!-- 13 -->
+					<a class="card" href="portfolio/ntn.html">
+						<div class="card-media">
+							<img src="assets/ntnthumb.png" alt="NTN Trails">
+							<span class="card-tag" data-tag="trail">Trail Map</span>
+						</div>
+						<div class="card-body">
+							<h3>NTN Trails Application</h3>
+							<p>A trail-finder for the North Country Trail network, with route conditions, mileage, and trailhead access mapped for planning trips.</p>
+						</div>
+					</a>
+
+					<!-- 14 -->
+					<a class="card" href="portfolio/shipwreck.html">
+						<div class="card-media">
+							<img src="assets/shipwreckthumb.png" alt="Lake Superior Shipwrecks">
+							<span class="card-tag" data-tag="history">Maritime History</span>
+						</div>
+						<div class="card-body">
+							<h3>Lake Superior Shipwrecks</h3>
+							<p>A mapped survey of known Lake Superior shipwreck sites, pairing coordinates with vessel histories and loss accounts.</p>
+						</div>
+					</a>
+
+					<!-- 15 -->
+					<a class="card" href="portfolio/craftbeer.html">
+						<div class="card-media">
+							<img src="assets/beerthumb-01.png" alt="Where's the Craft Beer?">
+							<span class="card-tag" data-tag="locator">Brewery Locator</span>
+						</div>
+						<div class="card-body">
+							<h3>Where's the Craft Beer?</h3>
+							<p>A lighthearted regional locator mapping craft breweries, built to explore point-data symbology and clustering at scale.</p>
+						</div>
+					</a>
+
+					<!-- 16 -->
+					<a class="card" href="portfolio/tuition.html">
+						<div class="card-media">
+							<img src="assets/collegetuitionthumb.png" alt="Rising College Tuition Infographic">
+							<span class="card-tag" data-tag="data">Data Infographic</span>
+						</div>
+						<div class="card-body">
+							<h3>College Tuition Infographic</h3>
+							<p>A data visualization tracking the rise of U.S. college tuition over time, designed to make a long trend legible at a glance.</p>
+						</div>
+					</a>
+
+					<!-- 17 -->
+					<a class="card" href="portfolio/nitrate.html">
+						<div class="card-media">
+							<img src="assets/nitratethumb-01.png" alt="Nitrate Cancer Analysis">
+							<span class="card-tag" data-tag="analysis">Spatial Analysis</span>
+						</div>
+						<div class="card-body">
+							<h3>Spatial Analysis: Nitrate &amp; Cancer Incidence</h3>
+							<p>A Python-based geospatial analysis exploring correlation between groundwater nitrate levels and cancer incidence rates.</p>
+						</div>
+					</a>
+
+					<!-- 18 -->
+					<a class="card" href="portfolio/newzealand.html">
+						<div class="card-media">
+							<img src="assets/nzthumb.png" alt="New Zealand Bike Tour">
+							<span class="card-tag" data-tag="travel">Route Map</span>
+						</div>
+						<div class="card-body">
+							<h3>New Zealand Bike Tour</h3>
+							<p>A route map and journal documenting a multi-week bicycle tour across New Zealand's North and South Islands.</p>
+						</div>
+					</a>
+
+					<!-- 19 -->
+					<a class="card" href="portfolio/sauxhead.html">
+						<div class="card-media">
+							<img src="assets/sauxthumb.png" alt="Saux Head Trail Map">
+							<span class="card-tag" data-tag="trail">Ski Trail Map</span>
+						</div>
+						<div class="card-body">
+							<h3>Saux Head Ski Trails</h3>
+							<p>A printable and web-ready trail map for the Saux Head ski area, showing groomed routes, difficulty, and elevation change.</p>
+						</div>
+					</a>
+
+					<!-- 20 -->
+					<a class="card" href="portfolio/alquaal.html">
+						<div class="card-media">
+							<img src="assets/quaalthumb.png" alt="Al Quaal Recreation Area Map">
+							<span class="card-tag" data-tag="trail">Recreation Map</span>
+						</div>
+						<div class="card-body">
+							<h3>Al Quaal Recreation Area</h3>
+							<p>A recreation area map for Al Quaal in Ishpeming, Michigan, covering trail layout, facilities, and seasonal use.</p>
+						</div>
+					</a>
+
+					<!-- 21 -->
+					<a class="card" href="portfolio/plantgarden.html">
+						<div class="card-media">
+							<img src="assets/plantsthumb.png" alt="NMU Outdoor Learning Area">
+							<span class="card-tag" data-tag="garden">Native Plant Garden</span>
+						</div>
+						<div class="card-body">
+							<h3>NMU Native Plant Garden</h3>
+							<p>An illustrated map of Northern Michigan University's outdoor learning area, identifying native plant species along a self-guided path.</p>
+						</div>
+					</a>
+
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="wrap footer-row">
+			<p>&copy; 2026 Bob Cowling — Cartography &amp; Historical GIS</p>
+			<a href="contact.html">Get in touch</a>
+		</div>
+	</footer>
+
+	<script src="lib/portfolio.js"></script>
+</body>
 </html>
