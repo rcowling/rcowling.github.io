@@ -2,48 +2,41 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<meta name="keywords" content="maps, cartography, gis, webmapping"/>
-		<title>Bob Cowling Cartography</title>
-		
-		<!--put your Bootstrap stylesheet links below this comment and above style.css-->
-		<link rel="stylesheet" href="../css/bootstrap.min.css">
-		<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
-		<link rel="stylesheet" href="../css/style.css">
-         <!-- Custom Fonts -->        
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-	</head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="maps, cartography, gis, webmapping, historical gis, deep mapping">
+	<meta name="description" content="Bob Cowling — Cartography & Historical GIS. Interactive maps, digital atlases, and spatial storytelling projects across the Great Lakes region and beyond.">
+	<title>Bob Cowling — Cartography &amp; GIS</title>
 
-	<body>
-		<nav class="navbar navbar-default navbar-fixed-top"> <!-- Creates the navbar -->
-		  <div class="container">
-		    <div class="navbar-header"> <!-- Creates the navbar header -->
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span> <!-- Used for screen readers for accessibility -->
-						<span class="glyphicon glyphicon-menu-hamburger"></span>
-						<span class="menu"> Menu</span>
-					</button> <!-- Hamburger button for smaller devices -->
-					<a class="navbar-brand"
-                       href="../index.html"
-                       style="font-family:Kaushan Script;font-size: 26px; color: #21edcf">
-                        <:/Bob_Cowling_
-                       </a> <!-- Your website brand name -->
-		    </div>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-		    <div id="navbar" class="collapse navbar-collapse"> <!-- Links to include in navbar -->
-		      <ul class="nav navbar-nav navbar-right">  <!-- Unordered list for links on navbar -->
-		        <li><a href="../resume.html">Resume</a></li>
-				<li><a href="../portfolio.html">Portfolio</a></li>
-                <li><a href="../about.html">About</a></li>  
-		        <li><a href="../contact.html">Contact</a></li>
-		      </ul>
-		    </div> <!-- end .navbar-collapse -->
-		  </div> <!-- end .container -->
-		</nav> <!-- end navigation bar -->
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+	<!-- contour texture layer -->
+	<div class="contour-field" aria-hidden="true"></div>
+
+	<header class="site-header">
+		<div class="wrap header-row">
+			<a class="brand" href="index.html">				
+				<span class="brand-text">Bob Cowling</span>
+				<span class="brand-mark">MLIS</span>
+			</a>
+
+			<button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation">
+				<span></span><span></span><span></span>
+			</button>
+
+			<nav id="primaryNav" class="primary-nav">				
+				<a href="../index.html" class="is-active">Portfolio</a>
+				<a href="../resume.html">Resume</a>				
+				<a href="../contact.html">Contact</a>
+			</nav>
+		</div>
+	</header>
   <div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
